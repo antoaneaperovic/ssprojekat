@@ -1,0 +1,23 @@
+
+---------------------------Tabela simbola---------------------------
+ID      |   NAME   |   TYPE   | VALUE  | SECTION | DEFINED |  SCOPE   
+2       |isr_terminal| Symbol   |0       |1        |1        |  Global   
+1       |isr       | Section  |0       |1        |1        |  Local   
+0       |UND       | Section  |0       |0        |1        |  Local   
+
+---------------------------Sekcije---------------------------
+
+Name: isr    ID: 1    Size: 4
+New address:   0
+Literals:
+Symbols:
+Relocation table:
+CODE:
+9 3 F E 0 0 0 4 
+
+Name: UND    ID: 0    Size: 0
+New address:   0
+Literals:
+Symbols:
+Relocation table:
+CODE:

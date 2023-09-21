@@ -1,0 +1,63 @@
+
+---------------------------Tabela simbola---------------------------
+ID      |   NAME   |   TYPE   | VALUE  | SECTION | DEFINED |  SCOPE   
+9       |finish    | Symbol   |36      |5        |1        |  Local   
+7       |handle_terminal| Symbol   |60      |5        |1        |  Local   
+5       |my_handler| Section  |0       |5        |1        |  Local   
+4       |handler   | Symbol   |0       |5        |1        |  Global   
+8       |handle_software| Symbol   |68      |5        |1        |  Local   
+0       |UND       | Section  |0       |0        |1        |  Local   
+1       |isr_timer | Symbol   |0       |0        |0        |  Extern   
+2       |isr_terminal| Symbol   |0       |0        |0        |  Extern   
+6       |handle_timer| Symbol   |52      |5        |1        |  Local   
+3       |isr_software| Symbol   |0       |0        |0        |  Extern   
+
+---------------------------Sekcije---------------------------
+
+Name: my_handler    ID: 5    Size: 100
+New address:   0
+Literals:
+Offset:76        Value: 2
+Offset:80        Value: 3
+Offset:84        Value: 4
+Symbols:
+Offset:88        Name: isr_timer
+Offset:92        Name: isr_terminal
+Offset:96        Name: isr_software
+Relocation table:
+Name: isr_timer     Offset:88    Addend:0
+Name: isr_terminal     Offset:92    Addend:0
+Name: isr_software     Offset:96    Addend:0
+CODE:
+8 1 E 0 1 F F C 
+8 1 E 0 2 F F C 
+9 0 1 2 0 0 0 0 
+9 2 2 F 0 0 3 C 
+3 1 F 1 2 0 2 0 
+9 2 2 F 0 0 3 8 
+3 1 F 1 2 0 2 0 
+9 2 2 F 0 0 3 4 
+3 1 F 1 2 0 2 0 
+9 3 2 E 0 0 0 4 
+9 3 1 E 0 0 0 4 
+9 6 0 E 0 0 0 4 
+9 3 F E 0 0 0 8 
+2 1 F 0 0 0 2 0 
+3 0 F 0 0 F E 8 
+2 1 F 0 0 0 1 C 
+3 0 F 0 0 F E 0 
+2 1 F 0 0 0 1 8 
+3 0 F 0 0 F D 8 
+0 2 0 0 0 0 0 0 
+0 3 0 0 0 0 0 0 
+0 4 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+
+Name: UND    ID: 0    Size: 0
+New address:   0
+Literals:
+Symbols:
+Relocation table:
+CODE:

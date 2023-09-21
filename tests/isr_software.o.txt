@@ -1,0 +1,36 @@
+
+---------------------------Tabela simbola---------------------------
+ID      |   NAME   |   TYPE   | VALUE  | SECTION | DEFINED |  SCOPE   
+3       |isr_software| Symbol   |0       |2        |1        |  Global   
+2       |isr       | Section  |0       |2        |1        |  Local   
+1       |value1    | Symbol   |0       |0        |0        |  Extern   
+0       |UND       | Section  |0       |0        |1        |  Local   
+
+---------------------------Sekcije---------------------------
+
+Name: isr    ID: 2    Size: 40
+New address:   0
+Literals:
+Offset:32        Value: 43981
+Symbols:
+Offset:36        Name: value1
+Relocation table:
+Name: value1     Offset:36    Addend:0
+CODE:
+8 1 E 0 1 F F C 
+8 1 E 0 2 F F C 
+9 2 1 F 0 0 1 4 
+9 2 2 F 0 0 1 4 
+8 0 2 0 1 0 0 0 
+9 3 2 E 0 0 0 4 
+9 3 1 E 0 0 0 4 
+9 3 F E 0 0 0 4 
+C D A B 0 0 0 0 
+0 0 0 0 0 0 0 0 
+
+Name: UND    ID: 0    Size: 0
+New address:   0
+Literals:
+Symbols:
+Relocation table:
+CODE:

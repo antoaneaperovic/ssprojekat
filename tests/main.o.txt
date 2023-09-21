@@ -1,0 +1,151 @@
+
+---------------------------Tabela simbola---------------------------
+ID      |   NAME   |   TYPE   | VALUE  | SECTION | DEFINED |  SCOPE   
+15      |my_data   | Section  |0       |15       |1        |  Local   
+13      |value7    | Symbol   |24      |15       |1        |  Global   
+12      |value6    | Symbol   |20      |15       |1        |  Global   
+11      |value5    | Symbol   |16      |15       |1        |  Global   
+3       |mathSub   | Symbol   |0       |0        |0        |  Extern   
+2       |mathAdd   | Symbol   |0       |0        |0        |  Extern   
+1       |handler   | Symbol   |0       |0        |0        |  Extern   
+4       |mathMul   | Symbol   |0       |0        |0        |  Extern   
+10      |value4    | Symbol   |12      |15       |1        |  Global   
+5       |mathDiv   | Symbol   |0       |0        |0        |  Extern   
+7       |value1    | Symbol   |0       |15       |1        |  Global   
+6       |my_start  | Symbol   |0       |14       |1        |  Global   
+9       |value3    | Symbol   |8       |15       |1        |  Global   
+14      |my_code   | Section  |0       |14       |1        |  Local   
+0       |UND       | Section  |0       |0        |1        |  Local   
+8       |value2    | Symbol   |4       |15       |1        |  Global   
+
+---------------------------Sekcije---------------------------
+
+Name: my_data    ID: 15    Size: 28
+New address:   0
+Literals:
+Symbols:
+Relocation table:
+CODE:
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+
+Name: my_code    ID: 14    Size: 280
+New address:   0
+Literals:
+Offset:196        Value: -258
+Offset:200        Value: 1
+Offset:204        Value: -268435456
+Offset:208        Value: 2
+Offset:212        Value: 7
+Offset:216        Value: 11
+Offset:220        Value: 5
+Offset:224        Value: 25
+Offset:228        Value: 4
+Offset:232        Value: 24
+Symbols:
+Offset:236        Name: handler
+Offset:240        Name: value2
+Offset:244        Name: mathAdd
+Offset:248        Name: value3
+Offset:252        Name: mathSub
+Offset:256        Name: value4
+Offset:260        Name: mathDiv
+Offset:264        Name: value5
+Offset:268        Name: value6
+Offset:272        Name: value1
+Offset:276        Name: value7
+Relocation table:
+Name: handler     Offset:236    Addend:0
+Name: value2     Offset:240    Addend:0
+Name: mathAdd     Offset:244    Addend:0
+Name: value3     Offset:248    Addend:0
+Name: mathSub     Offset:252    Addend:0
+Name: value4     Offset:256    Addend:0
+Name: mathDiv     Offset:260    Addend:0
+Name: value5     Offset:264    Addend:0
+Name: value6     Offset:268    Addend:0
+Name: value1     Offset:272    Addend:0
+Name: value7     Offset:276    Addend:0
+CODE:
+9 2 E F 0 0 C 4 
+9 2 1 F 0 0 E 4 
+9 4 1 1 0 0 0 0 
+1 0 0 0 0 0 0 0 
+9 2 1 F 0 0 B 8 
+8 1 E 0 1 F F C 
+9 2 1 F 0 0 B 0 
+8 1 E 0 1 F F C 
+2 1 F 0 0 F D C 
+8 2 F 0 1 0 C 8 
+9 2 1 F 0 0 A 8 
+8 1 E 0 1 F F C 
+9 2 1 F 0 0 9 8 
+8 1 E 0 1 F F C 
+2 1 F 0 0 0 B 8 
+8 2 F 0 1 0 B 8 
+9 2 1 F 0 0 9 4 
+8 1 E 0 1 F F C 
+9 2 1 F 0 0 9 0 
+8 1 E 0 1 F F C 
+2 1 F 0 0 0 A 8 
+8 2 F 0 1 0 A 8 
+9 2 1 F 0 0 8 4 
+8 1 E 0 1 F F C 
+9 2 1 F 0 0 8 0 
+8 1 E 0 1 F F C 
+2 1 F 0 0 0 9 8 
+8 2 F 0 1 0 9 8 
+9 2 1 F 0 0 7 4 
+8 1 E 0 1 F F C 
+9 2 1 F 0 0 7 0 
+8 1 E 0 1 F F C 
+2 1 F 0 0 0 8 0 
+8 2 F 0 1 0 8 4 
+9 2 1 F 0 0 8 4 
+9 2 1 1 0 0 0 0 
+9 2 2 F 0 0 5 C 
+9 2 2 2 0 0 0 0 
+9 2 3 F 0 0 5 C 
+9 2 3 3 0 0 0 0 
+9 2 4 F 0 0 5 C 
+9 2 4 4 0 0 0 0 
+9 2 5 F 0 0 5 C 
+9 2 5 5 0 0 0 0 
+9 2 6 F 0 0 5 8 
+9 2 6 6 0 0 0 0 
+9 2 7 F 0 0 5 8 
+9 2 7 7 0 0 0 0 
+0 0 0 0 0 0 0 0 
+F E F E F F F F 
+0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 F 0 
+0 2 0 0 0 0 0 0 
+0 7 0 0 0 0 0 0 
+0 B 0 0 0 0 0 0 
+0 5 0 0 0 0 0 0 
+1 9 0 0 0 0 0 0 
+0 4 0 0 0 0 0 0 
+1 8 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+
+Name: UND    ID: 0    Size: 0
+New address:   0
+Literals:
+Symbols:
+Relocation table:
+CODE:
