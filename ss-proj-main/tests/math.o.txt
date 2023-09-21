@@ -1,0 +1,52 @@
+#Sections:
+math		5	96
+#--literal pool:
+#--sym pool:
+#--rel table:
+#--bytes:
+
+#Data:
+81 e0 2f fc 
+92 1e 00 08 
+92 2e 00 0c 
+50 11 20 00 
+93 2e 00 04 
+93 fe 00 04 
+81 e0 2f fc 
+
+ 
+51 11 20 00 
+93 2e 00 04 
+93 fe 00 04 
+81 e0 2f fc 
+92 1e 00 08 
+92 2e 00 0c 
+52 11 20 00 
+93 2e 00 04 
+93 fe 00 04 
+81 e0 2f fc 
+92 1e 00 08 
+92 2e 00 0c 
+53 11 20 00 
+93 2e 00 04 
+93 fe 00 04 
+#--------
+UND		0	0
+#--literal pool:
+#--sym pool:
+#--rel table:
+#--bytes:
+
+#Data:
+#--------
+
+
+#symbolTable:
+math		5	0	0	0	5	1
+mathDiv		4	72	1	1	5	1
+UND		    0	0	0	1	0	1
+mathAdd		1	0	1	1	5	1
+mathMul		3	48	1	1	5	1
+mathSub		2	24	1	1	5	1
+
+

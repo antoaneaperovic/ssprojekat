@@ -1,0 +1,155 @@
+#Sections:
+my_data		15	28
+#--literal pool:
+#--sym pool:
+#--rel table:
+#--bytes:
+
+#Data:
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+#--------
+my_code		14	280
+#--literal pool:
+		4294967038	196
+		1	200
+		4026531840	204
+		2	208
+		7	212
+		11	216
+		5	220
+		25	224
+		4	228
+		24	232
+#--sym pool:
+		handler	236
+		value2	240
+		mathAdd	244
+		value3	248
+		mathSub	252
+		value4	256
+		mathDiv	260
+		value5	264
+		value6	268
+		value1	272
+		value7	276
+#--rel table:
+		handler	236	0
+		value2	240	0
+		mathAdd	244	0
+		value3	248	0
+		mathSub	252	0
+		value4	256	0
+		mathDiv	260	0
+		value5	264	0
+		value6	268	0
+		value1	272	0
+		value7	276	0
+#--bytes:
+
+#Data:
+92 ef 00 c0 
+92 1f 00 e4 
+94 11 00 00 
+10 00 00 00 
+92 1f 00 b4 
+81 e0 1f fc 
+92 1f 00 ac 
+81 e0 1f fc 
+21 f0 00 a8 
+82 f0 10 c8 
+92 1f 00 a4 
+81 e0 1f fc 
+92 1f 00 94 
+81 e0 1f fc 
+21 f0 00 b8 
+82 f0 10 b8 
+92 1f 00 90 
+81 e0 1f fc 
+92 1f 00 8c 
+81 e0 1f fc 
+21 f0 00 a8 
+82 f0 10 a8 
+92 1f 00 80 
+81 e0 1f fc 
+92 1f 00 7c 
+81 e0 1f fc 
+21 f0 00 98 
+82 f0 10 98 
+92 1f 00 70 
+81 e0 1f fc 
+92 1f 00 6c 
+81 e0 1f fc 
+21 f0 00 80 
+82 f0 10 84 
+92 1f 00 84 
+92 11 00 00 
+92 2f 00 5c 
+92 22 00 00 
+92 3f 00 5c 
+92 33 00 00 
+92 4f 00 5c 
+92 44 00 00 
+92 5f 00 5c 
+92 55 00 00 
+92 6f 00 58 
+92 66 00 00 
+92 7f 00 58 
+92 77 00 00 
+00 00 00 00 
+fe fe ff ff 
+01 00 00 00 
+00 00 00 f0 
+02 00 00 00 
+07 00 00 00 
+0b 00 00 00 
+05 00 00 00 
+19 00 00 00 
+04 00 00 00 
+18 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+#--------
+UND		0	0
+#--literal pool:
+#--sym pool:
+#--rel table:
+#--bytes:
+
+#Data:
+#--------
+
+
+#symbolTable:
+my_data		15	0	0	0	15	1
+value7		13	24	1	1	15	1
+value6		12	20	1	1	15	1
+value5		11	16	1	1	15	1
+mathSub		3	0	2	1	0	0
+mathAdd		2	0	2	1	0	0
+handler		1	0	2	1	0	0
+mathMul		4	0	2	1	0	0
+value4		10	12	1	1	15	1
+mathDiv		5	0	2	1	0	0
+value1		7	0	1	1	15	1
+my_start	6	0	1	1	14	1
+value3		9	8	1	1	15	1
+my_code		14	0	0	0	14	1
+UND		0	0	0	1	0	1
+value2		8	4	1	1	15	1
+
+
