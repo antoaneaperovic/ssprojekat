@@ -36,9 +36,11 @@ private:
     vector<uint32_t> emulatorAddrInt;
     vector<string> emulatorInstructions;
     //PC je 15, SP je 14;
-    array<uint32_t,16> registers;
+    // array<uint32_t,16> registers;
+    uint32_t registers[16];
     // status 0, handler 1, cause 2
-    array<uint32_t,3> registersCSR;
+    // array<uint32_t,3> registersCSR;
+    uint32_t registersCSR[3];
 
     unordered_map<uint32_t,uint8_t> memoryList;
 

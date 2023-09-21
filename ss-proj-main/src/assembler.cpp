@@ -61,7 +61,7 @@ void Assembler::generateFirstPass()
             string type = isGlobal ? "Global" : "Extern"; 
              line = matchingLine.str(1);
             while(!line.empty()) {
-                int index = line.find(',') == -1 ? line.length() : line.find(',');
+                int index = line.find(',') == string::npos ? line.length() : line.find(',');
                 tempElemName = line.substr(0, index);
                 if(symbols.count(tempElemName) != 0) {
                     //vec je generisan sad da vidimo jel okej
@@ -136,7 +136,7 @@ void Assembler::generateFirstPass()
         else if(regex_search(line, matchingLine, DIRECTIVE_WORD)) {
             line = matchingLine.str(1);
             while(!line.empty()) {
-                int index = line.find(',') == -1 ? line.length() : line.find(',');
+                int index = line.find(',') == string::npos ? line.length() : line.find(',');
                 tempElemName = line.substr(0, index);
                 tempSection->incrementCounter(4);
                 if(tempElemName == line) index = line.length() - 1;
@@ -145,7 +145,7 @@ void Assembler::generateFirstPass()
         }
         else if(regex_search(line, matchingLine, DIRECTIVE_SKIP)) {
             line = matchingLine.str(1);
-            int skipNum = line.find('x') != -1 ? stoi(line) : hexToDec(line.substr(2));
+            int skipNum = line.find('x') == string::npos ? stoi(line) : hexToDec(line.substr(2));
             tempSection->incrementCounter(skipNum);
         }
         else if(regex_search(line, matchingLine, INSTRUCTION_CALL) || regex_search(line, matchingLine, INSTRUCTION_JMP)) {
@@ -320,7 +320,7 @@ void Assembler::generateSecondPass()
             line = matchingLine.str(1);
             //cout<< "WORD:   ";
             while(!line.empty()) {
-                int index = line.find(',') == -1 ? line.length() : line.find(',');
+                int index = line.find(',') == string::npos ? line.length() : line.find(',');
                 //cout << "INDEX:" << index <<"  " << line.length();
                 instruction = line.substr(0, index);
                 line = matchingLine.str(1);
@@ -338,7 +338,7 @@ void Assembler::generateSecondPass()
                 else {
                     //LITERAL JE U PITANJU
                     //cout << "LITERAL " << line << endl;
-                    int litNum = instruction.find('x') != -1 ? stoi(instruction) : hexToDec(instruction);
+                    int litNum = instruction.find('x') == string::npos ? stoi(instruction) : hexToDec(instruction);
                     litNum = litNum == 0 ? 1 : litNum;
                     for(int i = 0; i < litNum*8; i++) {
                         tempSection->addCodeHex("0");
@@ -356,7 +356,7 @@ void Assembler::generateSecondPass()
         }
         else if(regex_search(line, matchingLine, DIRECTIVE_SKIP)) {
             line = matchingLine.str(1);
-            int skipNum = line.find('x') != -1 ? stoi(line) : hexToDec(line.substr(2));
+            int skipNum = line.find('x') == string::npos ? stoi(line) : hexToDec(line.substr(2));
             for(int i=0; i < skipNum*2; i++) tempSection->addCodeHex("0");
             tempSection->incrementCounter(skipNum);
         }
@@ -398,7 +398,7 @@ void Assembler::generateSecondPass()
             else {
                 //AKO JE U PITANJU LITERAL
                 isSecond = true;
-                string litName = line.find('x') != -1 ? line : to_string(hexToDec(line));
+                string litName = op.find('x') == string::npos ? op : to_string(hexToDec(op));
                 int value = tempSection->getLiteralItem(litName) == nullptr ? 0 : tempSection->getLiteralItem(litName)->getValue();
                 regD = value - tempSection->getCounter() - 4;
             }
@@ -444,7 +444,7 @@ void Assembler::generateSecondPass()
             else {
                 //AKO JE U PITANJU LITERAL
                 isSecond = true;
-                string litName = line.find('x') != -1 ? line : to_string(hexToDec(line));
+                string litName = op3.find('x') == string::npos ? op3 : to_string(hexToDec(op3));
                 int value = tempSection->getLiteralItem(litName) == nullptr ? 0 : tempSection->getLiteralItem(litName)->getValue();
                 regD = value - tempSection->getCounter() - 4;
             }
